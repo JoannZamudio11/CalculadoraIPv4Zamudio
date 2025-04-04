@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    position: fixed; /* Fijado al fondo */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Envía el canvas al fondo */
+}
+
+.container {
+    background-color: #161b22;
+    padding: 35px;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    min-height: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #58a6ff;
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4699FF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5aaaff; /* Un azul un poco más claro */
+    box-shadow: 0 0 12px rgba(70, 153, 255, 0.6), 0 0 24px rgba(70, 153, 255, 0.3);
+    transform: scale(1.03);
+}
+
+/* Estilos de resultados */
+#results {
+    padding: 10px;
+    background-color: #21262d;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: -110px;
+}
+
+#content {
+    display: block;
+    text-align: center;
+}
+
+#content.active {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 950px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #161b22;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    margin: 5px 0;
+}

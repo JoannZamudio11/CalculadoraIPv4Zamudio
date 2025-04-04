@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IPv4</title>
+</head>
+<body>
+    <canvas id="background"></canvas>
+    <div id="content">
+        <div class="container">
+            <h1>Calculadora IPv4</h1>
+            <form id="ipForm">
+                <div class="form-group">
+                    <label for="ip">Dirección IP:</label>
+                    <input type="text" id="ip" placeholder="Ej: 192.168.1.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="mask">Máscara de red (bits):</label>
+                    <input type="number" id="mask" min="0" max="32" placeholder="Ej: 24" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div class="result-section">
+                <h3>Información básica</h3>
+                <p><strong>IP ingresada:</strong> <span id="ipcalc"></span></p>
+                <p><strong>Máscara de red:</strong> <span id="mascaracalc"></span></p>
+                <p><strong>Clase de IP:</strong> <span id="claseip"></span></p>
+                <p><strong>Tipo de IP:</strong> <span id="tipoip"></span></p>
+            </div>
+            
+            <div class="result-section">
+                <h3>Información de red</h3>
+                <p><strong>IP de red:</strong> <span id="ipred"></span></p>
+                <p><strong>IP de broadcast:</strong> <span id="ipbroadcast"></span></p>
+                <p><strong>Hosts disponibles:</strong> <span id="nhost"></span></p>
+                <p><strong>Rango de IPs útiles:</strong> <span id="iputiles"></span></p>
+            </div>
+            
+            <div class="result-section">
+                <h3>Representación binaria</h3>
+                <p><strong>IP en binario:</strong> <span id="ipbinaria"></span></p>
+                <p><strong>Máscara en binario:</strong> <span id="mascarabinaria"></span></p>
+                <p><strong>Porción de red:</strong> <span id="ipredbinaria"></span></p>
+                <p><strong>Porción de host:</strong> <span id="iphostbinaria"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
