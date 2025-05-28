@@ -113,7 +113,7 @@ app.post('/calculate', (req, res) => {
     res.json(result);
 });
 
-const PORT = 80;
+const PORT = 3111;
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Servidor escuchando en http://0.0.0.0:${PORT}`);
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });

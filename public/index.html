@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCalc.css">
     <title>Calculadora IPv4</title>
 </head>
 <body>
@@ -16,9 +16,23 @@
                     <label for="ip">Dirección IP:</label>
                     <input type="text" id="ip" placeholder="Ej: 192.168.1.1" required>
                 </div>
-                <div class="form-group">
+                <div class="mask-selector">
+                    <div class="mask-option">
+                        <input type="radio" id="mask-type-bits" name="mask-type" value="bits" checked>
+                        <label for="mask-type-bits">Máscara por bits</label>
+                    </div>
+                    <div class="mask-option">
+                        <input type="radio" id="mask-type-decimal" name="mask-type" value="decimal">
+                        <label for="mask-type-decimal">Máscara decimal</label>
+                    </div>
+                </div>
+                <div class="form-group" id="mask-bits-group">
                     <label for="mask">Máscara de red (bits):</label>
                     <input type="number" id="mask" min="0" max="32" placeholder="Ej: 24" required>
+                </div>
+                <div class="form-group hidden" id="mask-decimal-group">
+                    <label for="mask-decimal">Máscara de red:</label>
+                    <input type="text" id="mask-decimal" placeholder="Ej: 255.255.255.0" required>
                 </div>
                 <button type="submit">Calcular</button>
             </form>
@@ -43,16 +57,26 @@
             </div>
             
             <div class="result-section">
+                <div class="color-legend">
+                    <span class="legend-item">
+                        <span class="color-box net"></span> Porción de red
+                    </span>
+                    <span class="legend-item">
+                        <span class="color-box host"></span> Porción de host
+                    </span>
+                </div>
                 <h3>Representación binaria</h3>
-                <p><strong>IP en binario:</strong> <span id="ipbinaria"></span></p>
-                <p><strong>Máscara en binario:</strong> <span id="mascarabinaria"></span></p>
-                <p><strong>Porción de red:</strong> <span id="ipredbinaria"></span></p>
-                <p><strong>Porción de host:</strong> <span id="iphostbinaria"></span></p>
+                <p><strong>IP en binario:</strong> 
+                    <span id="ipbinaria" class="ip-binary-highlighted"></span>
+                </p>
+                <p><strong>Máscara en binario:</strong> 
+                    <span id="mascarabinaria" class="ip-binary-highlighted"></span>
+                </p>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="animation.js"></script>
+    <script src="scriptCalc.js"></script>
+    <script src="animationCalc.js"></script>
 </body>
 </html>
