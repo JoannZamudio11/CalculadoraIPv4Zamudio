@@ -1,67 +1,68 @@
+# 🔢 Calculadora IPv4 - Zamudio
 
-***** README - Calculadora IPV4 - Zamudio *******
-------------------------------------------------------------------------------------------------------------------------------
-**Descripción**
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-"Calculadora IPV4 - Zamudio" es un proyecto desarrollado en Node.js, utilizando JavaScript, HTML y CSS para su funcionamiento. 
-Esta aplicación permite realizar cálculos relacionados con direcciones IPv4 y proporciona una interfaz web para su uso.
-------------------------------------------------------------------------------------------------------------------------------
+Una herramienta web para realizar cálculos con direcciones IPv4, desarrollada con Node.js, JavaScript, HTML y CSS.
 
-**Requisitos previos**
+## 🌟 Características
 
-Antes de ejecutar el proyecto, es necesario asegurarse de que Node.js esté correctamente instalado en el sistema y que los 
-comandos npm funcionen correctamente. Para verificarlo, se pueden utilizar los siguientes comandos en la terminal o consola:
+- Cálculos completos de direcciones IPv4
+- Interfaz web intuitiva
+- Fácil de instalar y usar
+- Ideal para fines educativos y redes
 
+## 📋 Prerrequisitos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- Node.js (versión 14.x o superior)
+- npm (viene con Node.js)
+
+### 🔍 Verificar instalación
+```bash
 node -v
-
 npm -v
+Si no los tienes instalados, puedes descargar Node.js desde el instalador incluido en el proyecto: node-v22.14.0-x64.msi
 
-Si ambos comandos devuelven una versión válida, significa que Node.js y npm están instalados correctamente.
+🛠️ Instalación
+Clona o descarga el repositorio
 
-En caso de aún no tener una versión compatible, dentro del proyecto se puede encontrar el instalador de los drivers con el 
-nombre -> node-v22.14.0-x64.msi
-
-------------------------------------------------------------------------------------------------------------------------------
-
-**Instalación de módulos**
-
-Este proyecto no incluye los módulos de Node.js preinstalados, por lo que es necesario instalarlos antes de ejecutar la 
-aplicación.
-
-+ Pasos para la instalación:
-
-1. Ubíquese en la carpeta del proyecto utilizando el comando:
-
+Navega al directorio del proyecto:
 cd ruta/del/proyecto
 
-2. Una vez dentro de la carpeta del proyecto, ejecute el siguiente comando para instalar las dependencias definidas en el 
-package.json:
-
+Instala las dependencias:
 npm install
 
-------------------------------------------------------------------------------------------------------------------------------
 
-**Ejecución del proyecto**
-
-Después de instalar los módulos necesarios, la aplicación se puede iniciar con el siguiente comando:
-
+🚀 Ejecución
+Para iniciar la aplicación:
 npm start
 
-Esto iniciará el servidor web y la aplicación estará disponible en el puerto 80.
+La aplicación estará disponible en:
+🌐 http://localhost:3111
 
-------------------------------------------------------------------------------------------------------------------------------
+⚙️ Configuración
+Puerto: Por defecto usa el puerto 3111. Si necesitas cambiarlo:
 
-**Notas adicionales**
+Modifica el archivo index.js
 
- + Asegúrese de que el puerto 80 esté libre para evitar conflictos con otros servicios.
+Asegúrate que el nuevo puerto esté disponible
 
- + Si se requiere cambiar el puerto de ejecución, modifique la configuración en el código fuente (index.js).
+📌 Notas importantes
+⚠️ Atención:
 
- + Para detener la ejecución del servidor, utilice Ctrl + C en la terminal.
+#- El puerto 3111 debe estar libre
 
-------------------------------------------------------------------------------------------------------------------------------
+#- Para detener el servidor usa Ctrl + C en la terminal
 
-Autor: Joann Alejandro Zamudio Castro - Facultad de ingeniería
+#- Solo para uso educativo y personal
 
-Licencia: Uso libre con fines educativos y personales.
+👨‍💻 Autor
+Joann Alejandro Zamudio Castro
+Estudiante de la Facultad de Ingeniería
 
+📜 Licencia
+Este proyecto está bajo licencia de uso libre para fines educativos y personales.
